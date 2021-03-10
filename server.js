@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 
 app.set('view engine', 'ejs')
 
-MongoClient.connect('mongodb+srv://test_1:admintim@cluster0.p4iym.mongodb.net/comments-database?retryWrites=true&w=majority', { useUnifiedTopology: true })
+MongoClient.connect('mongodb+srv://<USER>:<PASSWORD>@cluster0.p4iym.mongodb.net/comments-database?retryWrites=true&w=majority', { useUnifiedTopology: true })
   .then(client => {
     console.log("Database connected")
     const db = client.db('comments-database')

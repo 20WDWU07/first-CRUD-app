@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <h1>CRUD App with Node and Express</h1>
+  <form action="/comments" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="comment" name="comment">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="commments-container">
+    <h2> Comments</h2>
+    <ul class="comments">
+        <!-- Loop through comments -->
+       <% for(var i = 0; i < comments.length; i++) { %>
+        <div style="padding-bottom:10px">
+        <span style="font-weight:600"><%= comments[i].name %></span>
+        <span><%= comments[i].comment %></span>
+        <% } %>
+        </div>
+    </ul>
+  </div>
+</body>
+</html>

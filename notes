@@ -1,0 +1,18 @@
+In terminal: node server.js
+URL: localhost:3000
+
+To close the server, hold on Ctrl and press C
+
+Nodemon: npm install nodemon --save-dev
+
+To start our app with Nodemon: npm run dev
+
+npm install body-parser --save
+
+MongoDB Atlas: https://www.mongodb.com/cloud/atlas
+
+Project name: crud-comment-app
+
+Install MongoDB: npm install mongodb --save
+
+How to install EJS: npm install ejs --save
